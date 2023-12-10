@@ -1,0 +1,765 @@
+/* Styling for the header element */
+header {
+    display: flex; /* Flex container to manage the layout */
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly; /* Distribute space evenly between items horizontally */
+    background-color: #333834;
+    color: #333834;
+    padding: 50px;
+    border: 1px solid rgb(134, 123, 123); 
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgb(223, 212, 212); /* Add a bottom border with color */
+    
+}
+
+/* Style Logo and fix it on the left corner */
+#logo {
+    width: 70px;
+    height: 70px;
+    position: fixed; 
+    top: 20px;
+    left: 20px; 
+    animation: logoFadeIn 3.5s ease-out;
+}
+
+/* Logo Animation */
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style the Banner and Banner Picture */
+#banner {
+    text-align: center;
+    position: relative;
+    height: 300px; 
+    overflow: hidden;
+    background-color: #151617;
+    margin-top: 70px; 
+    
+}
+/* Banner Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#banner-picture img {
+    width: 100%;
+    height: 300px;
+    animation: fadeIn 4.5s ease-out, scrollDown 5s linear infinite;
+    object-fit: cover; /* Maintain image aspect ratio and cover the entire container */
+    border-bottom: 2px solid #151617; /* Add a 2px solid border at the bottom */
+    padding-bottom: 10px; /* Add some space between the border and the content */
+}
+
+
+
+/* Style the navigation items */
+.nav-list li {
+    margin-right: 5px; /* Adjust spacing between items as needed */
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+.nav-list a {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100px;
+    background-color: rgb(62, 59, 59);
+    padding: 5px;
+    color: white;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.nav-list a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+    }
+
+    .nav-list a {
+        width: auto;
+        margin: 0;
+    }
+}
+
+
+/* Styles for Welcome Section */
+#welcome-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+#welcome-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#welcome-section .description {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+#welcome-section .invite {
+    font-size: 1.2em;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Styles for Multimedia Section */
+#multimedia-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#multimedia-section h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#multimedia-section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.video-buttons button {
+    background-color: #333834;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.video-buttons button:hover {
+    background-color: #555;
+}
+
+.media-content video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    body {
+        font-size: 14px;
+    }
+    /* Adjust the logo size for smaller screens */
+    #top-header #logo {
+        max-width: 80%; 
+    }
+    /* Add more padding to the banner for smaller screens */
+    #banner {
+        padding: 20px; 
+    }
+    #multimedia-section {
+        padding: 20px; 
+    }
+    /* Make the video full width for smaller screens */
+    #presentation-video {
+        width: 100%; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+    body {
+        font-size: 12px;
+    }
+    #top-header #logo {
+        max-width: 60%; 
+    }
+    #banner {
+        padding: 30px; 
+    }
+    #multimedia-section {
+        padding: 30px; 
+    }
+    #presentation-video {
+        width: 100%; 
+    }
+}
+
+/* Global styles for all pages */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    color: #393c41; 
+}
+p {
+    color: #333; 
+}
+a {
+    color:  #393c41; 
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline; 
+}
+
+.video-buttons button {
+    background-color: #333834;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.media-content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#presentation-video {
+    width: 80%;
+    max-width: 800px;
+}
+
+
+/* Styles for Contact Table */
+#contact-table {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+#contact-table img {
+    border-radius: 8px; /* Add border-radius to images for rounded corners */
+}
+
+#contact-table table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#contact-table th, #contact-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#contact-table th {
+    background-color: #333834;
+    color: #fff;
+}
+
+#contact-table a {
+    color: #45494f;
+}
+
+#contact-table a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for "Get in Touch" Section */
+h2 {
+    color: #2e3033;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#apply-now {
+    background-color: #333834;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+#apply-now:hover {
+    background-color: #333834;
+}
+
+
+/* Styles for Get in Touch Form */
+#get-in-touch-form {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+/* Make the label text "Choose Expertise:" bold */
+#get-in-touch-form label.bold-label {
+    font-weight: bold;
+}
+
+/* Styles for Subscription Form */
+#subscription-form {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"] {
+    color: #2e3033;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #333834;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #333834;
+}
+
+
+/* Styles for Technical Skills Section */
+#technical-skills {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+#technical-skills img {
+    border-radius: 8px;
+}
+
+#technical-skills h2 {
+    color: #3d4a5e;
+    margin-top: 20px;
+}
+
+#technical-skills article {
+    text-align: left;
+}
+
+/* Styles for Talent Acquisition Section */
+#talent-acquisition {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+#talent-acquisition h2 {
+    color: #3d4a5e;
+    margin-top: 20px;
+}
+
+/* Styles for IT Consulting Section */
+#it-consulting {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+#it-consulting h2 {
+    color: #3d4a5e;
+    margin-top: 20px;
+}
+/* Styles for Services Table Section */
+#services-table {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+    width: 50%; /* Set the width to 50% for the left side */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    float: left; /* Float the table to the left */
+}
+
+#services-table h1 {
+    color: #070707;
+}
+
+#services-table table {
+    width: 100%; /* Make the table width 100% to fill the container */
+    border-collapse: collapse;
+}
+
+#services-table th, #services-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+#services-table th {
+    background-color: #3d4a5e;
+    color: #fff;
+}
+
+/* Styles for Multimedia Services Section */
+#multimedia-services {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+    margin-top: 50px; /* Add margin to separate from the previous section */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+#multimedia-services h2 {
+    color: #3d4a5e;
+    margin-top: 20px;
+}
+
+.media-content {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around;
+}
+
+/* Video Styles */
+#multimedia-services .video-container {
+    width: 50%; /* Set the width to 50% for the left side */
+    max-width: 480px; /* Adjust the max-width as needed */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+#multimedia-services video {
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Audio Styles */
+#multimedia-services .audio-container {
+    width: 50%; /* Set the width to 50% for the right side */
+    max-width: 300px; /* Adjust the max-width as needed */
+    margin-top: 20px; /* Add some space between the header and audio */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+#multimedia-services .audio-header {
+    text-align: center;
+    font-size: 1.2em;
+    color: #3d4a5e;
+}
+
+#multimedia-services audio {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Adjust the width for responsiveness */
+@media only screen and (max-width: 768px) {
+    #multimedia-services .video-container,
+    #multimedia-services .audio-container {
+        width: 100%; /* Set the width to 100% for both sections on smaller screens */
+        max-width: none; /* Remove the max-width for responsiveness */
+    }
+}
+
+
+#my-story1 {
+    text-align: center;
+    margin: 20px;
+    border-bottom: 2px solid #423e3e;
+    padding-bottom: 10px;
+}
+
+#bcevik-picture{
+    float: right;
+    width: 100%; /* Make images fill the width of the container */
+    max-width: 200px; /* Set a maximum width for better control */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center the images and add some space below */
+}
+#bcevik-picture1 {
+    float: left;
+    width: 100%; 
+    max-width: 200px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; 
+}
+
+
+
+article {
+    overflow: hidden;
+}
+
+h2 {
+    color: #3d4a5e;
+    margin-bottom: 10px;
+    border-color: #070707;
+}
+
+article p {
+    margin: 0;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    #bcevik-picture,
+    #bcevik-picture1 {
+        max-width: 100%; /* Allow images to take the full width on smaller screens */
+    }
+}
+
+  #professional-summary {
+    text-align: center;
+    margin: 20px; /* Add margin to the section for spacing */
+    border-bottom: 2px solid #423e3e; /* Add a 2px solid border at the bottom */
+    padding-bottom: 10px; /* Add some space between the border and the content */
+  }
+  
+  #professional-summary h2 {
+    color: #3d4a5e;
+    margin-bottom: 10px;
+    border-color: #070707;
+  }
+  
+  #professional-summary article {
+    overflow: hidden; /* Clear the float to prevent container collapse */
+  }
+  
+  #professional-summary article p {
+    margin: 0; /* Remove default margin for paragraphs */
+  }
+
+
+  #career {
+    text-align: left;
+    margin: 20px; /* Add margin to the section for spacing */
+    border-bottom: 20px solid #423e3e; /* Add a 2px solid border at the bottom */
+    padding-bottom: 50px; /* Add some space between the border and the content */
+  }
+  
+  #career h2 {
+    color: #3d4a5e;
+
+  }
+  
+  #career article {
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .school-info,
+  .work-info {
+    flex-basis: 58%; /* Adjust the width of the columns as needed */
+  }
+  
+  .school-info p,
+  .work-info p {
+    margin: 0;
+  }
+  
+  #bu-picture,
+  #fmi-picture {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px; /* Add  space between the text and the logos */
+  }
+
+
+
+/* Styles for Multimedia Content in My Hometown Section */
+#hometown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top of the container */
+  }
+  
+  #hometown h2, #hometown h3, #hometown p {
+    width: 100%; /* Make text take full width on smaller screens */
+    color: #3d4a5e;
+  }
+  
+  #hometown article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Make the article take full width */
+  }
+  
+  #hometown img {
+    width: calc(50% - 20px); /* Calculate image width with spacing */
+    max-width: 100%; /* Make the image take full width */
+    height: auto;
+    margin-bottom: 20px; /* Add spacing between image and video */
+  }
+  
+  .media-content-istanbul {
+    width: calc(50% - 20px); /* Calculate video width with spacing */
+  }
+  
+  .media-content-istanbul video {
+    width: 100%; /* Make the video responsive */
+    border-radius: 8px;
+  }
+
+
+
+/* Style the content container */
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Separate into two columns */
+    max-width: 750px; /* Set a maximum width for the content */
+    margin: 20px auto; /* Center the content horizontally */
+}
+
+/* Style the books container */
+.books-container,
+.movie-container {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 550px; /* Set a maximum width for each container */
+    border-bottom: 2px solid #423e3e;
+    padding-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* Style the ordered list */
+.books-container ol,
+.movie-container ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the list items */
+.books-container ol li,
+.movie-container ol li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add styles for table header (optional) */
+.books-container ol li:first-child,
+.movie-container ol li:first-child {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+
+/* Style the sports container */
+.sports-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Style soccer and tennis sections */
+.soccer-section,
+.tennis-section {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    box-sizing: border-box;
+    border: 2px solid #423e3e;
+    margin-bottom: 20px;
+}
+
+/* Style images inside the sections */
+.soccer-section img,
+.tennis-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #333834;
+    color: #fff;
+}
+
+
+
+.animate-on-hover {
+    transition: color 0.3s ease;
+  }
+  .animate-on-hover:hover {
+    color: #ff5733;
+  }
+
+
+  body {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
