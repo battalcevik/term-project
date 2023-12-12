@@ -191,22 +191,18 @@ header {
 
 /* Media Queries for Responsive Design */
 @media only screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
     body {
         font-size: 14px;
     }
-    /* Adjust the logo size for smaller screens */
     #top-header #logo {
         max-width: 80%; 
     }
-    /* Add more padding to the banner for smaller screens */
     #banner {
         padding: 20px; 
     }
     #multimedia-section {
         padding: 20px; 
     }
-    /* Make the video full width for smaller screens */
     #presentation-video {
         width: 100%; 
     }
@@ -278,8 +274,9 @@ a:hover {
     background-color: #f5f5f5;
 }
 
+/* Add border-radius to images for rounded corners */
 #contact-table img {
-    border-radius: 8px; /* Add border-radius to images for rounded corners */
+    border-radius: 8px;
 }
 
 #contact-table table {
@@ -434,17 +431,18 @@ button[type="submit"]:hover {
     text-align: center;
     padding: 50px;
     background-color: #f9f9f9;
-    width: 50%; /* Set the width to 50% for the left side */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    float: left; /* Float the table to the left */
+    width: 50%; 
+    box-sizing: border-box; 
+    float: left; 
 }
 
 #services-table h1 {
     color: #070707;
 }
 
+/* Make the table width 100% to fill the container */
 #services-table table {
-    width: 100%; /* Make the table width 100% to fill the container */
+    width: 100%; 
     border-collapse: collapse;
 }
 
@@ -463,8 +461,8 @@ button[type="submit"]:hover {
     text-align: center;
     padding: 50px;
     background-color: #f5f5f5;
-    margin-top: 50px; /* Add margin to separate from the previous section */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    margin-top: 50px; 
+    box-sizing: border-box;
 }
 
 #multimedia-services h2 {
@@ -475,15 +473,15 @@ button[type="submit"]:hover {
 .media-content {
     margin-top: 20px;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    flex-wrap: wrap; 
     justify-content: space-around;
 }
 
 /* Video Styles */
 #multimedia-services .video-container {
-    width: 50%; /* Set the width to 50% for the left side */
-    max-width: 480px; /* Adjust the max-width as needed */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    width: 50%; 
+    max-width: 480px; 
+    box-sizing: border-box; 
 }
 
 #multimedia-services video {
@@ -493,10 +491,10 @@ button[type="submit"]:hover {
 
 /* Audio Styles */
 #multimedia-services .audio-container {
-    width: 50%; /* Set the width to 50% for the right side */
-    max-width: 300px; /* Adjust the max-width as needed */
-    margin-top: 20px; /* Add some space between the header and audio */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    width: 50%; 
+    max-width: 300px; 
+    margin-top: 20px; 
+    box-sizing: border-box; 
 }
 
 #multimedia-services .audio-header {
@@ -514,8 +512,8 @@ button[type="submit"]:hover {
 @media only screen and (max-width: 768px) {
     #multimedia-services .video-container,
     #multimedia-services .audio-container {
-        width: 100%; /* Set the width to 100% for both sections on smaller screens */
-        max-width: none; /* Remove the max-width for responsiveness */
+        width: 100%; 
+        max-width: none; 
     }
 }
 
@@ -527,13 +525,14 @@ button[type="submit"]:hover {
     padding-bottom: 10px;
 }
 
+/* Make images fill the width of the container */
 #bcevik-picture{
     float: right;
-    width: 100%; /* Make images fill the width of the container */
-    max-width: 200px; /* Set a maximum width for better control */
+    width: 100%; 
+    max-width: 200px;
     height: auto;
     display: block;
-    margin: 0 auto 10px; /* Center the images and add some space below */
+    margin: 0 auto 10px; 
 }
 #bcevik-picture1 {
     float: left;
@@ -564,15 +563,15 @@ article p {
 @media only screen and (max-width: 600px) {
     #bcevik-picture,
     #bcevik-picture1 {
-        max-width: 100%; /* Allow images to take the full width on smaller screens */
+        max-width: 100%; 
     }
 }
 
   #professional-summary {
     text-align: center;
-    margin: 20px; /* Add margin to the section for spacing */
-    border-bottom: 2px solid #423e3e; /* Add a 2px solid border at the bottom */
-    padding-bottom: 10px; /* Add some space between the border and the content */
+    margin: 20px; 
+    border-bottom: 2px solid #423e3e; 
+    padding-bottom: 10px;
   }
   
   #professional-summary h2 {
@@ -582,19 +581,19 @@ article p {
   }
   
   #professional-summary article {
-    overflow: hidden; /* Clear the float to prevent container collapse */
+    overflow: hidden; 
   }
   
   #professional-summary article p {
-    margin: 0; /* Remove default margin for paragraphs */
+    margin: 0; 
   }
 
 
   #career {
     text-align: left;
-    margin: 20px; /* Add margin to the section for spacing */
-    border-bottom: 20px solid #423e3e; /* Add a 2px solid border at the bottom */
-    padding-bottom: 50px; /* Add some space between the border and the content */
+    margin: 20px; 
+    border-bottom: 20px solid #423e3e; 
+    padding-bottom: 50px; 
   }
   
   #career h2 {
@@ -609,7 +608,7 @@ article p {
   
   .school-info,
   .work-info {
-    flex-basis: 58%; /* Adjust the width of the columns as needed */
+    flex-basis: 58%; 
   }
   
   .school-info p,
@@ -621,7 +620,7 @@ article p {
   #fmi-picture {
     width: 100px;
     height: 40px;
-    margin-top: 10px; /* Add  space between the text and the logos */
+    margin-top: 10px; 
   }
 
 
@@ -631,11 +630,11 @@ article p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top of the container */
+    align-items: flex-start; 
   }
   
   #hometown h2, #hometown h3, #hometown p {
-    width: 100%; /* Make text take full width on smaller screens */
+    width: 100%; 
     color: #3d4a5e;
   }
   
@@ -643,22 +642,22 @@ article p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%; /* Make the article take full width */
+    width: 100%; 
   }
   
   #hometown img {
-    width: calc(50% - 20px); /* Calculate image width with spacing */
-    max-width: 100%; /* Make the image take full width */
+    width: calc(50% - 20px); 
+    max-width: 100%; 
     height: auto;
-    margin-bottom: 20px; /* Add spacing between image and video */
+    margin-bottom: 20px;
   }
   
   .media-content-istanbul {
-    width: calc(50% - 20px); /* Calculate video width with spacing */
+    width: calc(50% - 20px); 
   }
   
   .media-content-istanbul video {
-    width: 100%; /* Make the video responsive */
+    width: 100%; 
     border-radius: 8px;
   }
 
@@ -667,9 +666,9 @@ article p {
 /* Style the content container */
 .content-container {
     display: flex;
-    justify-content: space-between; /* Separate into two columns */
-    max-width: 750px; /* Set a maximum width for the content */
-    margin: 20px auto; /* Center the content horizontally */
+    justify-content: space-between; 
+    max-width: 750px; 
+    margin: 20px auto; 
 }
 
 /* Style the books container */
@@ -678,10 +677,10 @@ article p {
     text-align: center;
     border-radius: 10px;
     padding: 20px;
-    max-width: 550px; /* Set a maximum width for each container */
+    max-width: 550px; 
     border-bottom: 2px solid #423e3e;
     padding-bottom: 10px;
-    box-sizing: border-box; /* Include padding and border in the width calculation */
+    box-sizing: border-box; 
 }
 
 /* Style the ordered list */
@@ -740,16 +739,85 @@ article p {
 }
 
 
-/* Footer Styles */
-footer {
-    margin-top: 20px;
-    text-align: center;
-    padding: 10px;
-    background-color: #333834;
-    color: #fff;
+/* Additional styles from degrees.css */
+/* Initially hide the education content */
+.education-content {
+    max-width: 800px;
+    margin: 20px auto;
+    display: none;
 }
 
+/* Style for the "show" class to make the education content visible */
+.education-content.show {
+    display: block;
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.additional-info {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.additional-info h2 {
+    color: #671717;
+}
+
+.additional-info p {
+    line-height: 1.6;
+}
+
+.university-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+ /* Hover effect for education table rows */
+ table tbody tr:hover {
+    background-color: #b75757; 
+    cursor: pointer;
+  }
+
+  
+  #education-history {
+    padding: 10px 20px; 
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 20px;
+  }
+ 
+/* Styles for the Education History button */
+#toggleButton.education-button {
+    display: inline-block;
+    background-color: #b75757;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+#toggleButton.education-button:hover {
+    background-color: #455da0;
+}
 
 .animate-on-hover {
     transition: color 0.3s ease;
@@ -763,3 +831,152 @@ footer {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
   }
+
+/* Additional styles for resume container */
+.resume-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b75757;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.resume-button:hover {
+    background-color: #455da0;
+}
+
+
+#gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-container {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-bottom: 50px;
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.33% - 10px); 
+    margin-bottom: 20px; 
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    position: relative; 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+    border-radius: 8px;
+}
+
+
+/* Add styles for the visibility toggle animation of the text */
+.gallery-item .image-text {
+    opacity: 12;
+    transition: opacity 4.5s ease-in-out; 
+}
+.gallery-item.visible {
+    display: flex;
+}
+
+.gallery-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.gallery-buttons button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #526252;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 20 20px;
+}
+
+.gallery-buttons #prevButton {
+    background-color: #526252;
+    color: white;
+    margin-right: 10px; 
+}
+
+.gallery-buttons #nextButton {
+    background-color: #526252;
+    color: white;
+}
+
+.gallery-buttons button:hover {
+    background-color: #a04548;
+}
+
+#gallery-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px; 
+    color: #333; 
+}
+        /* Social Media Integration Styles */
+        #social-nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-item {
+            margin: 0 10px;
+        }
+
+        .social-item a {
+            display: inline-block;
+            padding: 10px;
+            text-decoration: underline;
+            color: #111010;
+            background-color: #e2edf3;
+            border-radius: 5px;
+        }
+
+        .social-item a img {
+            width: 80px; 
+            height: 40px;
+            margin-right: 5px;
+        }
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #333834;
+    color: #fff;
+}
+
+  

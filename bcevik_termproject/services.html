@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/main.css">
         <title>Welcome to My Web Site</title>
+        <!-- Create and add the script to initialize flatpickr for date and time inputs   -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     </head>
     <body>
         <!-- this is a landing home page so I added 2 images that represent technology and my company -->
@@ -18,7 +22,7 @@
                     <li class="nav-item"><a href="about.html">About</a></li>
                     <li class="nav-item"><a href="services.html">Services</a></li>
                     <li class="nav-item"><a href="education.html">Education</a></li>
-                    <li class="nav-item"><a href="galery.html">Galery</a></li>
+                    <li class="nav-item"><a href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -30,6 +34,9 @@
             <!-- created sections to describe services pages  -->
             <section id="technical-skills">
                 <img src="./images/consulting.png" alt="Battal Cevik WebSite" style="width: 300px; height: 200px;">
+                <img src="./images/consulting1.png" alt="Battal Cevik WebSite" style="width: 300px; height: 200px;">
+                <img src="./images/consulting2.png" alt="Battal Cevik WebSite" style="width: 300px; height: 200px;">
+                <img src="./images/consulting3.png" alt="Battal Cevik WebSite" style="width: 300px; height: 200px;">
                 <h2>Technical Interview Skills</h2>
                 <article>
                     <p>
@@ -108,7 +115,76 @@
                 <br><br><br> <!-- added empty spaces here to separate from the table -->
                 <br><br><br> 
             </section>
+            <section id="schedule-interview">
+                <h2>Schedule Interview</h2>
+                <div>
+                    <label for="interview-date">Select Date:</label>
+                    <input type="text" id="interview-date" placeholder="Select date">
+                </div>
+                <div>
+                    <label for="interview-time">Select Time:</label>
+                    <input type="text" id="interview-time" placeholder="Select time">
+                </div>
+                <button onclick="scheduleInterview()">Schedule Interview</button>
+            </section>
+            <section id="schedule-consulting">
+                <h2>Schedule Consulting</h2>
+                <div>
+                    <label for="consulting-date">Select Date:</label>
+                    <input type="text" id="consulting-date" placeholder="Select date">
+                </div>
+                <div>
+                    <label for="consulting-time">Select Time:</label>
+                    <input type="text" id="consulting-time" placeholder="Select time">
+                </div>
+                <button onclick="scheduleConsulting()">Schedule Consulting</button>
+            </section>
+            
         </main>
+        <script>
+            // Script to initialize flatpickr and handle scheduling logic
+            flatpickr("#interview-date", {
+                enableTime: false,
+                dateFormat: "Y-m-d",
+                minDate: "today",
+                maxDate: new Date().fp_incr(30),
+                disable: ["2013-08-16", "2013-08-17"],
+            });
+    
+            flatpickr("#interview-time", {
+                enableTime: true,
+                noCalendar: true,
+                dateFormat: "H:i",
+                minTime: "09:00",
+                maxTime: "17:00",
+            });
+    
+            flatpickr("#consulting-date", {
+                enableTime: false,
+                dateFormat: "Y-m-d",
+                minDate: "today",
+                maxDate: new Date().fp_incr(30),
+                disable: ["2013-08-16", "2013-08-17"],
+            });
+    
+            flatpickr("#consulting-time", {
+                enableTime: true,
+                noCalendar: true,
+                dateFormat: "H:i",
+                minTime: "09:00",
+                maxTime: "17:00",
+            });
+    
+            function scheduleInterview() {
+                // Implement the scheduling logic for interviews
+                alert("Interview scheduled!");
+            }
+    
+            function scheduleConsulting() {
+                // Implement the scheduling logic for consulting
+                alert("Consulting scheduled!");
+            }
+        </script>
         <footer>&copy;2023. Battal Cevik. Open Source.</footer>
     </body>
 </html>

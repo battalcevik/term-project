@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to the Istanbul Gallery Page</title>
+  <link rel="stylesheet" href="./css/istanbulpics.css">
+  <!-- Include Vue.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="./main.js" defer ></script>
+</head>
+
+<body>
+<div id="app">
+    <div class="content-section">
+        <p>It is a showcase the transition of Istanbul through a visual journey from 1920 to 2023. 
+            The Istanbul Gallery Page features a collection of images capturing the essence of this vibrant city over time. 
+            From the historical charm reflected in earlier snapshots to the contemporary scenes of 2023, each image tells a unique story. 
+            Feel free to explore and immerse yourself in the rich tapestry of Istanbul's past and present by toggling between the images. 
+            Click on the "Toggle All Images" button to witness the transformation at once. Enjoy this visual experience that encapsulates the diverse facets of Istanbul.</p><br>
+    </div>
+  <!-- Create a button toggle images -->
+    <button @click="toggleAllImages">Toggle All Images</button><br>
+  <!-- Create Vue.js code -->
+  <div v-for="(image, index) in images" :key="index" class="image-container">
+    <img :src="image.showCurrent ? image.current : image.earlier" alt="Image" style="max-width: 200px; max-height: 200px;">
+    <div class="overlay" @click="toggleImage(index)">
+      Hover to see {{ image.toggleText }}
+    </div>
+  </div>
+</div>
+
+<script>
+    new Vue({
+    el: '#app',
+    data: {
+      images: [
+        { current: './images/istanbul2020v1.jpeg', earlier: './images/istanbul1920v1.jpeg', showCurrent: true, toggleText: 'istanbul' },
+        { current: './images/istanbul2020v2.jpeg', earlier: './images/istanbul1920v2.jpeg', showCurrent: true, toggleText: 'istanbul' },
+        { current: './images/istanbul2020v3.jpeg', earlier: './images/istanbul1920v3.jpeg', showCurrent: true, toggleText: 'istanbul' },
+        { current: './images/istanbul2020v4.jpeg', earlier: './images/istanbul1920v4.jpeg', showCurrent: true, toggleText: 'istanbul' },
+        { current: './images/istanbul2020v5.jpeg', earlier: './images/istanbul1920v5.jpeg', showCurrent: true, toggleText: 'istanbul' },      ]
+    },
+    methods: {
+      toggleImage(index) {
+        const image = this.images[index];
+        image.showCurrent = !image.showCurrent;
+        image.toggleText = image.showCurrent ? 'istanbul' : 'current';
+      },
+      toggleAllImages() {
+        // Toggle all images at once
+        this.images.forEach(image => {
+          image.showCurrent = !image.showCurrent;
+          image.toggleText = image.showCurrent ? 'istanbul' : 'current';
+        });
+      }
+    }
+  });
+</script>
+</body>
+</html>

@@ -5,7 +5,7 @@
         <meta name="description" content="Battal Cevik, Software Engineer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/main.css">
-        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <script src="./about.js"></script>
         <title>Welcome to My Web Site</title>
     </head>
     <body>
@@ -19,7 +19,7 @@
                     <li class="nav-item"><a href="about.html">About</a></li>
                     <li class="nav-item"><a href="services.html">Services</a></li>
                     <li class="nav-item"><a href="education.html">Education</a></li>
-                    <li class="nav-item"><a href="galery.html">Galery</a></li>
+                    <li class="nav-item"><a href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -83,8 +83,16 @@
                 <article>
                     <p>
                         <!-- created extarnal hyperlink  -->
-                        I come from the beautiful city of <a href="https://istanbul.goturkiye.com/" target="_blank">Istanbul</a>, Turkey. Istanbul is a vibrant metropolis that bridges Europe and Asia, offering a rich blend of history, culture, and breathtaking architecture.
+                        I come from the beautiful city of <a href="https://istanbul.goturkiye.com/" target="_blank">Istanbul</a>, Turkey.
+                        Istanbul is a vibrant metropolis that bridges Europe and Asia, offering a rich blend of history, culture, and breathtaking architecture. 
+                        Nestled strategically along the Bosporus Strait, Istanbul boasts a unique geographical position that has shaped its identity throughout the centuries. 
+                        The city is a living testament to the convergence of diverse civilizations, with landmarks like the Hagia Sophia and the Blue Mosque standing as magnificent reminders of its Byzantine and Ottoman past. 
+                        The bustling Grand Bazaar and the vibrant Spice Bazaar showcase Istanbul's thriving markets and the fusion of East and West in its culinary offerings. 
+                        As you wander through the winding streets of the historic neighborhoods, you'll encounter the juxtaposition of ancient traditions and modern influences. 
+                        Istanbul's dynamic energy is palpable in its bustling street life, lively entertainment scene, and the ever-present aroma of Turkish coffee. 
+                        Whether exploring the historic sites of Sultanahmet, cruising along the Bosporus, or savoring the delectable Turkish cuisine in a traditional meyhane, Istanbul captivates visitors with its timeless charm and the warm hospitality of its people.
                     </p>
+                    <h2>Istanbul Gallery</h2>
                     <img id="istanbul1" src="./images/maidens_tower.png" alt="Istanbul">
                     <div class="media-content-istanbul">
                         <video width="480" src="./assets/video/istanbul_turkey.mp4"
@@ -93,7 +101,11 @@
 
                 </article>
             </section>
-            
+                        <!-- Include the second HTML file using an iframe -->
+            <section id="istanbul-gallery">
+                <iframe src="./istanbulpics.html" width="100%" height="600px" frameborder="0"></iframe>
+            </section>
+
             <section id="hobbies">
                 <h2>My Hobbies</h2>
                 <article>
@@ -102,26 +114,23 @@
                     </p>
                     <div class="content-container">
                         <div class="books-container">
-
                             <h4>My Favorite Top 5 Books</h4>
-                           <!-- created a traditional list-type content -->
                             <ol>
-                                <li>Masumiyet Muzesi by Orhan Pamuk</li>
-                                <li>1984 by George Orwell</li>
-                                <li>Samarkand by Amin Maalouf</li>
-                                <li>Serenade by Zülfü Livaneli</li>
-                                <li>Crime and Punishment by Fyodor Dostoevsky</li>
+                                <li><a href="https://www.goodreads.com/book/show/6282753-the-museum-of-innocence" target="_blank">Masumiyet Muzesi by Orhan Pamuk</a></li>
+                                <li><a href="https://www.goodreads.com/book/show/61439040-1984" target="_blank">1984 by George Orwell</a></li>
+                                <li><a href="https://www.goodreads.com/book/show/142395.Samarkand" target="_blank">Samarkand by Amin Maalouf</a></li>
+                                <li><a href="https://www.goodreads.com/en/book/show/11085413" target="_blank">Serenade by Zülfü Livaneli</a></li>
+                                <li><a href="https://www.goodreads.com/book/show/7144.Crime_and_Punishment" target="_blank">Crime and Punishment by Fyodor Dostoevsky</a></li>
                             </ol>
                         </div>
                         <div class="movie-container">
                             <h4>My Favorite Top 5 Movies</h4>
-                            <!-- created a traditional list-type content -->
                             <ol>
-                                <li>The Lord of the Rings Series</li>
-                                <li>Dead Poets Society</li>
-                                <li>The Pursuit of Happyness</li>
-                                <li>Interstellar</li>
-                                <li>Togo</li>
+                                <li class="movie-item"><a href="https://www.imdb.com/title/tt0120737/" target="_blank" title="The Lord of the Rings Series">The Lord of the Rings Series</a></li>
+                                <li class="movie-item"><a href="https://www.imdb.com/title/tt0097165/" target="_blank" title="Dead Poets Society">Dead Poets Society</a></li>
+                                <li class="movie-item"><a href="https://www.imdb.com/title/tt0454921/" target="_blank" title="The Pursuit of Happyness">The Pursuit of Happyness</a></li>
+                                <li class="movie-item"><a href="https://www.imdb.com/title/tt0816692/" target="_blank" title="Interstellar">Interstellar</a></li>
+                                <li class="movie-item"><a href="https://www.imdb.com/title/tt5116302/" target="_blank" title="Togo">Togo</a></li>
                             </ol>
                         </div>
                     </div>

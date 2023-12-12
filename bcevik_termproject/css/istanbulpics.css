@@ -1,0 +1,57 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* New styles for the header and button */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+  }
+  
+  #app {
+    text-align: center; /* Center the button */
+  }
+  
+  
+  button {
+    margin-top: 20px; /* Add margin to separate button from images */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #090a09;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .content-section {
+      background-color: #f0f0f0; /* Set your desired background color */
+      padding: 20px; /* Adjust the padding as needed */
+      text-align: center; /* Center-align the text */
+      max-width: 600px; /* Set the maximum width for the content section */
+      margin: 0 auto; /* Center the content section horizontally */
+    }

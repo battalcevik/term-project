@@ -4,8 +4,15 @@
         <meta charset="UTF-8">
         <meta name="description" content="Battal Cevik, Software Engineer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/main.css">        
+        <link rel="stylesheet" href="./css/main.css">
         <title>Welcome to My Web Site</title>
+        <style>
+            .media-content {
+                display: none;
+            }
+        </style>
+        <script src="./main.js"></script>
+
     </head>
     <body>
         <!-- this is a landing home page so I added 2 images that represent technology and my company -->
@@ -18,7 +25,7 @@
                     <li class="nav-item"><a href="about.html">About</a></li>
                     <li class="nav-item"><a href="services.html">Services</a></li>
                     <li class="nav-item"><a href="education.html">Education</a></li>
-                    <li class="nav-item"><a href="galery.html">Galery</a></li>
+                    <li class="nav-item"><a href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -37,11 +44,10 @@
                     Let's embark on this exciting adventure together, where innovation knows no bounds!
                 </p>
                 <p class="invite">Join me on a journey of innovation and transformation. Let's shape the future together!</p>
-
             </section>
             <!-- creating another sections to mention my technology services -->
             <section id="multimedia-section">
-                <h3>My Services Media Content</h3>
+                <h3>My Services Content</h3>
                 <p>As a software engineer, I established Agile Technologies, a consulting company dedicated to providing innovative solutions. 
                     I'd be delighted to offer you a brief video tour to showcase the range of services I can provide.
                     Agile Technologies Consulting is your launchpad for career development. We offer clear paths for advancement, mentorship programs, and access to diverse, impactful projects that provide valuable experience. 
@@ -50,16 +56,37 @@
                 </p>
                 <!-- add a video presentation to get more attention -->
                 <div class="video-buttons">
-                    <button>Show</button>
-                    <button>Hide</button>
+                    <button onclick="showMedia()">Show Video</button>
+                    <button onclick="hideMedia()">Hide Video</button>
                 </div>
-                <div class="media-content">
+                <div class="media-content" id="media-content">
                     <video width="480" src="./assets/video/agilebrain_ai_technology_intro.mp4"
                     poster="./assets/video/agilebrain_consulting.png" controls></video> 
                 </div>
-
             </section>
-
+            <!-- Social Media Integration as Buttons -->
+            <nav id="social-nav">
+                <div class="social-buttons">
+                    <div class="social-item">
+                        <a href="https://www.linkedin.com/in/battal-cevik-64b39a163/" target="_blank">
+                            <img src="./images/linkedIn_logo.png" alt="LinkedIn">
+                            LinkedIn
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://twitter.com/bttlcvk" target="_blank">
+                            <img src="./images/xicon.png" alt="Twitter">
+                            Twitter
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://github.com/battalcevik" target="_blank">
+                            <img src="./images/githublogo.png" alt="GitHub">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </main>
         <footer>&copy;2023. Battal Cevik. Open Source.</footer>
     </body>

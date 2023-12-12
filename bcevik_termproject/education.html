@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Battal Cevik, Software Engineer - Education History"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="degrees.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Education History - Battal Cevik</title>
+  </head>
+  <body>
+    <header id="top-header">
+      <img
+        id="logo"
+        src="./images/agiletech_logo.png"
+        alt="Agile Technology Consulting"
+      />
+      <nav id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="services.html">Services</a></li>
+          <li class="nav-item"><a href="education.html">Education</a></li>
+          <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="banner-picture">
+      <img id="company-image" src="./images/business.png" alt="Battal Cevik WebSite" />
+    </div>
+
+    <main>
+      <div class="education-resume-container">
+        <section id="education-history">
+          <p>
+            Please click on the Education History button to see my education
+            background!
+          </p>
+          <button id="toggleButton" class="education-button">
+            Education History
+          </button>
+
+          <section class="education-content" id="educationSection">
+            <table>
+              <thead>
+                <tr>
+                  <th>School</th>
+                  <th>Program</th>
+                  <th>Type</th>
+                  <th>Year Conferred</th>
+                </tr>
+              </thead>
+              <tbody id="educationTableBody">
+                <!-- Table content will be added dynamically using JavaScript -->
+              </tbody>
+            </table>
+          </section>
+        </section>
+
+        <section class="additional-info">
+          <div class="resume-container">
+            <p>Please click on the Resume button to see my resume!</p>
+            <a href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-button">View My Resume</a>
+          </div>
+          <h2>About Me</h2>
+          <p>
+            Welcome to my Education History page. Here, you can find details
+            about the degrees I've earned and the programs I've been a part of
+            throughout my academic journey.
+          </p>
+
+          <h2>Future Goals</h2>
+          <p>
+            As I continue my educational journey, I look forward to pursuing new
+            challenges and expanding my knowledge in various fields. Stay tuned
+            for more updates on my academic endeavors!
+          </p>
+
+          <img
+            src="./images/bostonuniversitycampus.png"
+            alt="University Campus"
+            class="university-image"
+            style="width: 400%; height: 300px"
+            ;
+          />
+        </section>
+      </div>
+    </main>
+
+    <footer>&copy;2023. Battal Cevik. Open Source.</footer>
+
+    <script src="fetchDegrees.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.getElementById("toggleButton");
+        const educationSection = document.getElementById("educationSection");
+
+        toggleButton.addEventListener("click", function () {
+          educationSection.classList.toggle("show");
+        });
+      });
+    </script>
+  </body>
+</html>
