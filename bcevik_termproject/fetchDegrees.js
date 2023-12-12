@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Create a link for the university name
         const universityLink = document.createElement('a');
-        universityLink.href = degree.url; // Assuming 'url' is a property in your JSON data
-        universityLink.target = '_blank'; // Open the link in a new tab
+        universityLink.href = degree.url; 
+        universityLink.target = '_blank'; 
         universityLink.textContent = degree.school;
 
         // Create cells and append the link to the "School" cell

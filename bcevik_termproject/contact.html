@@ -76,11 +76,8 @@
           facilitator, service and expertise options.
         </p>
         <!-- Create a Form from and use the POST method to submit actin URL provided-->
-        <form
-          action="https://bu-course-examples.com/"
-          method="POST"
-          onsubmit="return validateForm()"
-        >
+        <form action="https://formspree.io/f/mbjvnwel" method="POST" onsubmit="return validateForm()">
+
           <label for="firstName">First Name:</label>
           <input type="text" id="firstName" name="firstName" required /><br />
 
@@ -130,7 +127,7 @@
       <section id="subscription-form">
         <!-- Use Vue.js to handle subscription form submission -->
         <div id="subscription-app">
-          <form @submit.prevent="submitSubscriptionForm">
+          <form action="https://formspree.io/f/mbjvnwel"method="POST">
             <h2>Subscribe to Our Newsletter</h2>
             <label for="first-name">First Name:</label>
             <input v-model="subscriptionForm.firstName" type="text" id="first-name" name="first-name" required/><br />
