@@ -1,4 +1,4 @@
-# Web Project README
+# Battal Cevik Term Project
 
 This repository contains the source code for **Battal Cevik's Web Site**, showcasing the professional portfolio and personal information of Battal Cevik, a Software Engineer. The project is organized into several HTML files, each serving a specific purpose.
 
