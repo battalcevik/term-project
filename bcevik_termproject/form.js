@@ -1,5 +1,3 @@
-// app.js
-
 // Create a Function for Get In Touch Form validation
 function validateForm() {
   // Validate firstName and lastName

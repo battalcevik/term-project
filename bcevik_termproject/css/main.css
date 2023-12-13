@@ -54,20 +54,21 @@ header {
         opacity: 1;
     }
 }
+/* Maintain image aspect ratio and cover the entire container */
 #banner-picture img {
     width: 100%;
     height: 300px;
     animation: fadeIn 4.5s ease-out, scrollDown 5s linear infinite;
-    object-fit: cover; /* Maintain image aspect ratio and cover the entire container */
-    border-bottom: 2px solid #151617; /* Add a 2px solid border at the bottom */
-    padding-bottom: 10px; /* Add some space between the border and the content */
+    object-fit: cover; 
+    border-bottom: 2px solid #151617; 
+    padding-bottom: 10px; 
 }
 
 
 
 /* Style the navigation items */
 .nav-list li {
-    margin-right: 5px; /* Adjust spacing between items as needed */
+    margin-right: 5px; 
 }
 .nav-list {
     display: flex;
@@ -461,7 +462,7 @@ button[type="submit"]:hover {
     text-align: center;
     padding: 50px;
     background-color: #f5f5f5;
-    margin-top: 50px; 
+    margin-top: 0px; 
     box-sizing: border-box;
 }
 
@@ -491,7 +492,7 @@ button[type="submit"]:hover {
 
 /* Audio Styles */
 #multimedia-services .audio-container {
-    width: 50%; 
+    width: 100%; 
     max-width: 300px; 
     margin-top: 20px; 
     box-sizing: border-box; 
@@ -739,7 +740,6 @@ article p {
 }
 
 
-/* Additional styles from degrees.css */
 /* Initially hide the education content */
 .education-content {
     max-width: 800px;
@@ -940,36 +940,65 @@ th {
     font-size: 24px; 
     color: #333; 
 }
-        /* Social Media Integration Styles */
-        #social-nav {
-            margin-top: 20px;
-            text-align: center;
-        }
+/* Social Media Integration Styles */
+#social-nav {
+    margin-top: 20px;
+    text-align: center;
+}
 
-        .social-buttons {
-            display: flex;
-            justify-content: center;
-        }
+.social-buttons {
+    display: flex;
+    justify-content: center;
+}
 
-        .social-item {
-            margin: 0 10px;
-        }
+.social-item {
+    margin: 0 10px;
+}
 
-        .social-item a {
-            display: inline-block;
-            padding: 10px;
-            text-decoration: underline;
-            color: #111010;
-            background-color: #e2edf3;
-            border-radius: 5px;
-        }
+.social-item a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: underline;
+    color: #111010;
+    background-color: #e2edf3;
+    border-radius: 5px;
+}
 
-        .social-item a img {
-            width: 80px; 
-            height: 40px;
-            margin-right: 5px;
-        }
+.social-item a img {
+    width: 80px; 
+    height: 40px;
+    margin-right: 5px;
+}
 
+#enterDetails{
+    background-color: #3d4a5e; 
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+        
+
+#schedule-interview {
+    width: 50%; 
+    box-sizing: border-box;
+    background-color: #a3a9ab; 
+    padding: 10px;
+    float: left;
+}
+        
+#schedule-consulting {
+    width: 50%; 
+    box-sizing: border-box;
+    background-color: #9f7374;
+    padding: 10px;
+    float: right;            
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* Footer Styles */
 footer {
     margin-top: 20px;
