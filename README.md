@@ -35,8 +35,8 @@ This repository contains the source code for **Battal Cevik's Web Site**, showca
 - **Sections:**
   - **Header:** Navigation bar with links to other pages.
   - **Banner Picture:** Displaying the company image.
-  - **About Me:** Personal introduction and welcome pictures.
-  - **Professional Skills:** Overview of professional skills and experience.
+  - **Services:** Services that is provided.
+  - **Schedule Service:** To schedule services and consulting
   - **Footer:** Source information and copyright.
 
 ### [education.html]
@@ -47,7 +47,17 @@ This repository contains the source code for **Battal Cevik's Web Site**, showca
   - **Banner Picture:** Company image.
   - **Education History:** Button to toggle the display of education table.
   - **Education Content:** Table displaying school, program, type, and year conferred.
+  - **Resume:** Display Resume
   - **Additional Info:** About me, future goals, and an image of a university campus.
+
+### [gallery.html]
+
+- **Description:** Gallery page nature pictures.
+- **Sections:**
+  - **Header:** Navigation bar with links.
+  - **Banner Picture:** Company image.
+  - **Nature Picture:** Nature Photo Gallery image.
+  - **Additional Info:** Add next and previous button to see images
 
 ### [contact.html]
 
@@ -81,4 +91,25 @@ This repository contains the source code for **Battal Cevik's Web Site**, showca
   - jQuery: Included for making asynchronous requests.
   - Vue.js: Used for handling subscription form submission.
 
-Feel free to explore the individual HTML files for more details on each page's content and functionality. If you have any questions or need further assistance, please reach out!
+## How to Run
+- Clone the repository:
+
+- bash Copy code git clone git@github.com:battalcevik/term-project.git
+- Open the project folder.
+
+- Open the desired HTML file in a web browser to navigate through different pages.
+
+## Dependencies
+- Flatpickr: Date and time picker for scheduling interviews and consulting sessions.
+- Flatpickr Initialization Script: Script to initialize Flatpickr.
+- Database Script: Script for handling data (Note: Make sure to check the database script for functionality).
+- Usage
+- Explore the various sections by navigating through the links in the navigation bar.
+- Schedule interviews and consulting sessions using the provided forms.
+- Feel free to explore the individual HTML files for more details on each page's content and functionality. If you have any questions or need further assistance, please reach out!
+
+
+* Thank you for visiting!
+
+* ©2023. Battal Cevik. Open Source.
+
